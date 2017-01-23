@@ -1,0 +1,554 @@
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Кабинет: Заявки</title>  
+  <!-- Import fonts -->
+
+  <link rel="stylesheet" href="http://intrans.net/sites/all/themes/intrans/css/c.css?ojzio2">
+  
+  <!--  Import bootstrap -->
+  <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">-->
+   
+  <!-- Import main styles -->
+  <link rel="stylesheet" href="../css/main.css">
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  
+  <!--Import jQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+  <script type="text/javascript" src="  https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+  
+  <script src="../inc/jquery.smartPlaceholder.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+  
+</head>
+
+
+<body class="cab html front not-logged-in no-sidebars page-node page-node- page-node-385 node-type-page i18n-ru">
+  <div class="root" data-lang="ru">
+    <div class="w root_padding"> 
+      <!-- Header -->
+<header class="clearfix">
+  <div id="timeout" class="hide">3000</div>
+  <table class="table_100 table_top">
+    <tbody>
+      <tr>
+        <td class="top-table-left-td">
+          <!-- logo -->
+          <a href="/" class="logo logot13 opacity">
+            <div class="logo-text">логистический оператор полного цикла</div>
+          </a>
+        </td>
+        <td class="top-table-right-td">
+          <!-- top menu -->
+          <a href="javascript:;" class="mob-menu-toggle">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div class="left JStm">
+            <ul class="top-menu inline_block">
+              <li class="menu-460 first"><a href="/about-company">О компании</a></li>
+              <li class="menu-861"><a href="/intrans_live">Интранс LIVE</a></li>
+              <li class="menu-512"><a href="/geography-work">География работы</a></li>
+              <li class="menu-513"><a href="/work-to-company">Работа в компании</a></li>
+              <li class="menu-514"><a href="/deyatelnost">Пресс-центр</a></li>
+              <li class="menu-464 last"><a href="/contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="right lan">
+            <div class="region region-language">
+              <div id="block-block-9" class="block block-block">
+                <div class="content">
+                  <!-- Yandex.Metrika counter -->
+                  <script type="text/javascript">
+                    (function (d, w, c) {
+                      (w[c] = w[c] || []).push(function () {
+                        try {
+                          w.yaCounter36160100 = new Ya.Metrika({
+                            id: 36160100
+                            , clickmap: true
+                            , trackLinks: true
+                            , accurateTrackBounce: true
+                          });
+                        }
+                        catch (e) {}
+                      });
+                      var n = d.getElementsByTagName("script")[0]
+                        , s = d.createElement("script")
+                        , f = function () {
+                          n.parentNode.insertBefore(s, n);
+                        };
+                      s.type = "text/javascript";
+                      s.async = true;
+                      s.src = "https://mc.yandex.ru/metrika/watch.js";
+                      if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                      }
+                      else {
+                        f();
+                      }
+                    })(document, window, "yandex_metrika_callbacks");
+                  </script>
+                  <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/36160100" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+                  <!-- /Yandex.Metrika counter -->
+                </div>
+              </div>
+              <!-- /.block -->
+            </div>
+            <!-- /.region -->
+            <div class="lang_wrap">
+              <a href="/"><img src="http://intrans.net/sites/all/themes/intrans/img/ru.png"></a>
+              <a href="/en"><img src="http://intrans.net/sites/all/themes/intrans/img/en.png"></a>
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="JS_locator_container">
+            <div class="region-nomer">
+              <div class="JS_region">Санкт-Петербург</div>
+              <div class="JS_region_nomer">+7 (812) 407-88-99</div>
+            </div>
+            <div class="JS_other_sity"> Другой город
+              <div id="JS_popup_sity" onmouseleave="menu_car_hide();" class="JS_popup_sity">
+                <div class="JS_popup_sity_item" data-n="0">Московская область</div>
+                <div class="JS_popup_sity_item" data-n="1">Новосибирская область</div>
+                <div class="JS_popup_sity_item" data-n="2">Свердловская область</div>
+                <div class="JS_popup_sity_item" data-n="3">Нижегородская область</div>
+                <div class="JS_popup_sity_item" data-n="4">Татарстан</div>
+                <div class="JS_popup_sity_item" data-n="5">Челябинская область</div>
+                <div class="JS_popup_sity_item" data-n="6">Самарская область</div>
+                <div class="JS_popup_sity_item" data-n="7">Башкирия</div>
+                <div class="JS_popup_sity_item" data-n="8">Красноярский край</div>
+                <div class="JS_popup_sity_item" data-n="9">Пермская область</div>
+                <div class="pom_sity_item">Головной офис</div>
+                <div class="JS_popup_sity_item popup_sity_item_active" data-n="10">Санкт-Петербург</div>
+              </div>
+            </div>
+            
+            <div class="JS_user" data-toggle="modal" data-target="#modal-enter">
+              Вход
+            </div>
+            
+            <div class="JS_user logged">
+              <i class="fa fa-user-circle"></i><span>Личный кабинет</span>
+              <div id="JS_popup_user" onmouseleave="menu_car_hide();" class="JS_popup_user">
+                <a href=""><i class="fa fa-bell"></i> Уведомления <b>2</b></a>
+                <a href=""><i class="fa fa-file-text-o"></i> Заявки <b>+ 4</b></a>
+                <a href=""><i class="fa fa-plus-circle"></i> Добавить заявку</a>
+                <a href=""><i class="fa fa-cogs"></i> Настройки</a>
+                <a href=""><i class="fa fa-question-circle-o"></i> Помощь</a>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</header>
+<!-- top-second-menu -->
+<div class="w clearfix mt6">
+  <div class="region region-top-second-menu">
+    <div id="block-views-top-second-menu-block" class="block block-views">
+      <div class="content">
+        <div class="view view-top-second-menu view-id-top_second_menu view-display-id-block view-dom-id-e5f347234e28a4ea1c895610089d7adf">
+          <div class="view-content">
+            <a class="top-second-menu-a
+" href="/tamogenoe-oformlenie"> <span class="field-content">Таможенное оформление и сопровождение ВЭД</span>
+              <div class="top-second-icon">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon1.png" width="28" height="35" alt=""></div>
+              </div>
+              <div class="top-second-icon-hover hide">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon1_hover.png" width="28" height="35" alt=""></div>
+              </div>
+            </a>
+            <a class="top-second-menu-a
+" href="/expedirovanie-gruzov"> <span class="field-content">Экспедирование грузов</span>
+              <div class="top-second-icon">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon2.png" width="35" height="32" alt=""></div>
+              </div>
+              <div class="top-second-icon-hover hide">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon2_hover.png" width="35" height="32" alt=""></div>
+              </div>
+            </a>
+            <a class="top-second-menu-a
+" href="/konsultacii-po-ved"> <span class="field-content">Консультационный центр</span>
+              <div class="top-second-icon">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon4.png" width="37" height="40" alt=""></div>
+              </div>
+              <div class="top-second-icon-hover hide">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon4_hover.png" width="37" height="40" alt=""></div>
+              </div>
+            </a>
+            <a class="top-second-menu-a
+" href="/kompleksnya-logistika"> <span class="field-content">Комплексные логистические решения</span>
+              <div class="top-second-icon">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon5.png" width="29" height="31" alt=""></div>
+              </div>
+              <div class="top-second-icon-hover hide">
+                <div><img typeof="foaf:Image" src="http://intrans.net/sites/default/files/icon5_hover.png" width="29" height="31" alt=""></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.block -->
+  </div>
+  <!-- /.region -->
+</div>
+<!-- blocks -->
+<div class="w clearfix row">
+   <a class="block-menu-min block-menu1-min" href="/morskie-perevozky">МОРСКИЕ <br> ПЕРЕВОЗКИ</a>
+   <a class="block-menu-min block-menu2-min" href="/avtotransportnie-perevozky">АВТОТРАНСПОРТНЫЕ <br> ПЕРЕВОЗКИ</a>
+   <a class="block-menu-min block-menu3-min" href="/aviacionnye-perevozky">АВИАЦИОННЫЕ <br> ПЕРЕВОЗКИ</a>
+   <a class="block-menu-min block-menu4-min1 block-menu4-min" href="/geleznodor">ЖЕЛЕЗНОДОРОЖНЫЕ <br> ПЕРЕВОЗКИ</a>
+   <a class="block-menu-min block-menu5-min block-menu4-min" href="/multimodal">Мультимодальные <br>
+перевозки</a>
+   <a class="block-menu-min block-menu6" href="/sbornie-gruzy">ПЕРЕВОЗКИ СБОРНЫХ <br> ГРУЗОВ</a>
+</div>
+
+     
+<div class="cabhead">
+  <h2>Личный кабинет</h2>
+  <a href="" class="btn btn-primary add-z"><i class="fa fa-plus"></i> Заявку</a>
+  <nav>
+    <ul>
+      <li>
+        <a href=""><i class="fa fa-bell"></i> <span>Уведомления</span> <b>2</b></a>
+      </li>
+      <li>
+        <a href=""><i class="fa fa-file-text-o"></i> <span>Заявки</span> <b>+ 4</b></a>
+      </li>
+      <li class="active">
+        <a href=""><i class="fa fa-cogs"></i> <span>Настройки</span></a>
+      </li>
+      <li>
+        <a href="/za_add"><i class="fa fa-question-circle-o"></i> <span>Помощь</span></a>
+      </li>
+    </ul>
+  </nav>
+  
+</div>
+      
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li class="active">Уведомления</li>
+      </ol>
+      
+      <div class="cab-page w clearfix pb50">
+        
+        <div class="za-div" if="form0">
+          <form>
+            <div class="rowbs">
+              <div class="col-md-4">
+                <h2>Заявка</h2>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control" placeholder="ID">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control" placeholder="Ваша компания">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control date"  id="datetimepicker1" placeholder="Дата">
+                </div>
+                <div class="form-group">
+                  
+                  <div >
+                    <input type="text" class="form-control" placeholder="Код ТНВЭД">
+                  </div>
+                </div>
+                <div class="form-group">
+                  
+                  <div >
+                    <textarea name="" id="" class="form-control" rows="2">Контактная информация</textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <h2>Место</h2>
+                <div class="form-group">
+                  
+                  
+                    <input type="text" class="form-control" placeholder="Место погрузки">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  
+                    <input type="text" class="form-control" placeholder="Место доставки">
+                  
+                </div>
+                <div class="form-group">
+                  
+                 
+                    <input type="text" class="form-control" placeholder="Место таможенного оформления">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <select  class="form-control">
+                    <option value="">EXW</option>
+                    <optgroup label="Первый перевозчик">
+                      <option value="">FCA</option>
+                      <option value="">CPT</option>
+                      <option value="">CIP</option>
+                    </optgroup>
+                    <optgroup label="Группа?">
+                      <option value="">DDU</option>
+                      <option value="">DDP</option>
+                      <option value="">FAS</option>
+                      <option value="">DAF</option>
+                      <option value="">DEQ</option>
+                      <option value="">FOB</option>
+                      <option value="">CFR</option>
+                      <option value="">CIF</option>
+                      <option value="">DES</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <h2>Груз</h2>
+                <div class="form-group">
+                  
+                  
+                    <input type="text" class="form-control" placeholder="Название груза">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  
+                    <input type="text" class="form-control" placeholder="Вес груза">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  
+                    <input type="text" class="form-control" placeholder="Габариты груза (ДхШхВ)">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  
+                    <select  class="form-control">
+                      <option value="">Штабелируемый груз</option>
+                      <option value="">Не штабелируемый груз</option>
+                    </select>
+                  
+                </div>
+                <div class="form-group">
+                  
+                 
+                    <input type="text" class="form-control" placeholder="Стоимость груза">
+                  
+                </div>
+                <div class="form-group">
+                  
+               
+                    <input type="text" class="form-control" placeholder="Ссылка на товар">
+                  
+                </div>
+              </div>
+              
+            </div>
+            <hr>
+            <h2>Транспорт</h2>
+            <div class="rowbs clearfix">
+              <div class="col-md-5">
+                <div class="form-group">
+                  
+                  <div >
+                    <input type="text" class="form-control" placeholder="Вид транспортных средств">
+                  </div>
+                </div>
+                <div class="form-group">
+                  
+                  <div >
+                    <input type="text" class="form-control" placeholder="Количество транспортных средств">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <textarea class="form-control" rows="6">Комментарий</textarea>
+              </div>
+            </div>
+            <br><br>
+            <hr>
+          </form>
+        </div>
+        <br><br>
+        <hr>
+        <!-- DOCS -->
+        <div class="docs-upload" id="uploader">
+          <form action="">
+            <h2 >Документы <i class="fa fa-question-circle tip" title="подсказка"></i></h2>
+            <div class="form-group">
+              
+                <div class="robs clearfix">
+                  <div class="doc">
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <br>
+                    <b>ИЛИ</b><br><br>
+                    <input name="file" type="file" id="file1" multiple />
+                  </div>
+                  
+               </div>
+            </div>
+          </form>
+        </div>
+        <hr>
+        <center>
+          <a href="" class="btn btn-primary btn-lg">Отправить заявку</a>
+        </center>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- footer.html -->
+
+<div class="footer">
+ 
+  <div class="footer-bottom">
+    <div class="w rel clearfix h100 footer-bottom-bg">
+      <div class="footer-logo">
+        <!--<a href="http://www.iso.org/iso/home.htm" class="iso" ></a>
+              <a href="http://www.atlas-network.com/launch.cfm" class="atlas" ></a>
+              <a href="http://www.spbcci.ru/" class="palata" ></a>--></div>
+      <div class="itsspb">Разработка и поддержка сайта компания <a href="http://itsspb.ru">АЙ ТИ СЕРВИС</a> </div>
+      <!-- copyright -->
+      <div class="copy" style="margin-top: 25px;">© ООО "ИНТРАНС" 2014
+        <br> Все права защищены</div>
+      <!-- bottom menu -->
+      <ul class="bottom-menu left">
+        <li class="menu-460 first"><a href="/about-company">О компании</a></li>
+        <li class="menu-861"><a href="/intrans_live">Интранс LIVE</a></li>
+        <li class="menu-512"><a href="/geography-work">География работы</a></li>
+        <li class="menu-513"><a href="/work-to-company">Работа в компании</a></li>
+        <li class="menu-514"><a href="/deyatelnost">Пресс-центр</a></li>
+        <li class="menu-464 last"><a href="/contacts">Контакты</a></li>
+      </ul>
+      <!-- pair --><a href="/pair" class="pair">Партнерам</a> </div>
+  </div>
+</div>
+ 
+
+
+<!-- modal.html -->
+<!-- Sign UP -->
+<div class="modal modal-enter fade" id="modal-enter" tabindex="-1" role="dialog">
+  <div class="sign-up">
+    <div class="card card-container">
+      <a type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle"></i></a>
+      <h2>Войти</h2>
+      <img id="profile-img" class="profile-img-card" src="../img/enter.svg" />
+      <form class="form-signin">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+          <div id="remember" class="checkbox">
+              <label>
+                  <input type="checkbox" value="remember-me"> Запомнить меня
+              </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Войти в кабинет</button>
+      </form><!-- /form -->
+      <a href="#" class="forgot-password">
+        Забыли пароль?
+      </a>
+      <a href="#" class="reg-link">
+        Регистрация
+      </a>
+    </div><!-- /card-container -->
+  </div>
+</div>
+
+<!-- Site Sripts -->
+<script src="../inc/bootstrap.min.js"></script>
+<script src="../inc/main.js"></script>
+
+
+<!--PAGES select only dev-->
+<style>
+  body{}
+  .project-menu{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    right: 0px;
+    left:0;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 5px 0px 0px 0px;
+  }
+  .project-menu a{
+    font-size: 10px;
+  }
+</style>
+<div class="project-menu">
+  <div class="btn-group" role="group" id="hpages">
+    <a href="/index.html" class="m1 btn btn-sm btn-success">Кабинет</a>
+    <a href="/options.html" class="m1 btn btn-sm btn-success">Опции</a>
+    <a href="/help.html" class="m1 btn btn-sm btn-success">Помощь</a>
+    <a href="/mail.html" class="m1 btn btn-sm btn-success">Уведомления</a>
+    <a href="/za_list.html" class="m1 btn btn-sm btn-success">Завяки</a>
+    <a href="/za_list2.html" class="m1 btn btn-sm btn-success">Завяки JS таблица</a>
+    <a href="/za_add.html" class="m1 btn btn-sm btn-success">Завяки: добавить</a>
+    <a href="/za_add2.html" class="m1 btn btn-sm btn-success">Запрос с сайта</a>
+  </div>
+</div>
+
+<!--PAGES js navi only dev-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+(function ($) {
+  'use strict';
+  $(document).ready(function () {
+    $(function () {
+        setNavigation();
+    });
+    function setNavigation() {
+        var path = window.location.pathname;
+        path = path.replace(/\/$/, "");
+        path = decodeURIComponent(path);
+        $("#hpages a").each(function () {
+            var href = $(this).attr('href');
+            if (path.substring(0, href.length) === href) {
+                $(this).addClass('active');
+            }
+        });
+    }
+  }); //end ready
+}(jQuery));
+</script>
+<!--.STYLE CHANGE dev-->
+<!--.PAGES navi dev-->
+
+</body>
+</html>

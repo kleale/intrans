@@ -1,0 +1,95 @@
+/*
+Modal general
+*/
+
+.card-container.card {
+  max-width: 300px;
+  padding: 30px 30px;
+  position: relative;
+  
+  .close{
+    position: absolute -10px -10px * *;
+    color: #243985;
+    background: #fff;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+      i{
+        line-height: 27px;
+      }
+    
+    &:hover{
+      color: red;
+    }
+  }
+}
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  h2{
+    font-size: 24px;
+    color: #243985;
+    text-transform: uppercase;
+    font-family: 'PFmedium';
+    padding: 0 0 15px 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+}
+.profile-img-card {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 0px;
+    display: block;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.reg-link{
+  float: right;
+}
+
+

@@ -1,0 +1,282 @@
+{% set title = "Кабинет: Заявки" %}
+
+<!DOCTYPE html>
+<html>
+{% include "template/head.html" %}
+
+
+<body class="cab html front not-logged-in no-sidebars page-node page-node- page-node-385 node-type-page i18n-ru">
+  <div class="root" data-lang="ru">
+    <div class="w root_padding"> 
+      {% include "template/header.html" %}
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li class="active">Уведомления</li>
+      </ol>
+      
+      <div class="cab-page w clearfix pb50">
+        
+        <div class="za-div" if="form0">
+          <form action="" class="shag shag1">
+            <h2>Выберите тип оказываемых услуг:</h2>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch1"> Транспортная перевозка
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch2"> Таможенное оформление груза
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch3"> Экспедирование груза
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch4"> Страхование груза
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch5"> Оформление ВТТ
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch6"> Услуги сертификации
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch7"> Консультационные услуги
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="ch8"> Другое
+              </label>
+            </div>
+            <div class="hide" id="other">
+              <br>
+              <h2>Укажите тут то, что вас интересует, если не нашли этого:</h2>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            <!--<a href="" class="btn btn-primary btn-lg">Далее</a>-->
+            </div>
+          </form>
+        </div> <!-- za-div -->
+        
+        <div class="za-div hide" id="form1">
+          <hr>
+          <form action="" class="shag shag2 form-horizontal">
+            <h2>Транспортная перевозка</h2>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">
+                Укажите условия поставки:
+              </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Условия поставки">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Место погрузки:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Место погрузки">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Место доставки:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Место доставки">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Место таможенного оформления:</label>
+              <div class="col-sm-10">
+                <select  class="form-control">
+                  <option>санкт-петербург</option>
+                  <option>новоросс</option>
+                  <option>владик</option>
+                  <option>мск и мо</option>
+                </select>
+              </div>
+            </div>
+            
+            <h2>Транспорт:</h2>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">
+              Тип транспортных средств:
+              </label>
+              <div class="col-sm-10">
+                <div class="rowbs">
+                  <div class="col-sm-5">
+                    <label for="">Контейнер</label>
+                    <select  class="form-control">
+                      <option>Выберите контейнер</option>
+                      <option>20'DC</option>
+                      <option>40'DC</option>
+                      <option>45'DC</option>
+                      <option>Ref(Рефрижератор)</option>
+                      <option>Flat Rack(открытая площадка)</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <label for="">Авто</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="col-sm-2">
+                    <label for="">Ж/Д</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="col-sm-2">
+                    <label for="">Авиа</label>
+                    <input type="number" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+            
+          </form>
+          
+        </div><!--za-div -->
+        
+        
+        
+        <div class="za-div hide" id="form2">
+          <hr>
+          <form action="" class="shag shag3 form-horizontal">
+            <h2>Таможенное оформление</h2>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">
+                Выберите нужное
+              </label>
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Импорт
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Экспорт
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Реэкспорт
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Временный ввоз
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Временный вывоз
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <!--<a href="" class="btn btn-primary btn-lg">Далее</a>-->
+          </form>
+        </div><!--za-div -->
+        
+        <div class="za-div hide" id="form3">
+          <hr>
+          <h2>Консультационные услуги</h2>
+        </div><!--za-div -->
+        
+        
+        <!-- DOCS -->
+        <div class="docs-upload hide" id="uploader">
+          <form action="" class="shag">
+            <h2 class="">Документы</h2>
+            <div class="form-group">
+              
+                <div class="rowbs">
+                  <div class="col-sm-6 doc">
+                   <label for="f1">Инвойс <i class="fa fa-question-circle tip" title="подсказка"></i></label>
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <b>ИЛИ</b>
+                    <input name="file" type="file" id="file1" multiple />
+                  </div>
+                  <div class="col-sm-6 doc">
+                    <label for="f1">Packing list <i class="fa fa-question-circle tip" title="подсказка"></i> </label>
+
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <b>ИЛИ</b>
+                    <input type="file" name="file" id="file2" multiple>
+
+                  </div>
+                  <div class="col-sm-6 doc">
+                   <label for="f1">Тех. описание груза <i class="fa fa-question-circle tip" title="подсказка"></i></label>
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <b>ИЛИ</b>
+                    <input type="file" name="file" id="file3" multiple>
+
+                  </div>
+                  <div class="col-sm-6 doc">
+                   <label for="f1">Коносамент <i class="fa fa-question-circle tip" title="подсказка"></i></label>
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <b>ИЛИ</b>
+                    <input type="file" name="file" id="file4" multiple>
+
+                  </div>
+               </div>
+              </div>
+            
+          </form>
+        </div>
+        
+        <div class="q-answer hide" id="q-answer">
+          <form action="" class="shag shag3 form-horizontal">
+            <h2 class="">Мы ответим на любой ваш вопрос</h2>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Поле для комментариев:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3">
+                </textarea>
+                </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="q-answer hide" id="fsubmit">
+          <div class="form-group">
+            <label class="col-sm-2">&nbsp;</label>
+          </div>
+          <div class="col-sm-10">
+            <a href="" class="btn btn-primary btn-lg">Отправить заявку</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  {% include "template/footer.html" %} 
+
+{% include "template/modal.html" %}
+{% include "template/scripts.html" %}
+
+</body>
+</html>

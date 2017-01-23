@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready(function(){e(".logged").click(function(){e(this).toggleClass("open")}),e(".JS_popup_user").mouseleave(function(){e(".logged").removeClass("open")})})}(jQuery);

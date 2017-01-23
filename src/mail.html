@@ -1,0 +1,54 @@
+{% set title = "Кабинет: Уведомления" %}
+
+<!DOCTYPE html>
+<html>
+{% include "template/head.html" %}
+
+
+<body class="cab html front not-logged-in no-sidebars page-node page-node- page-node-385 node-type-page i18n-ru">
+  <div class="root" data-lang="ru">
+    <div class="w root_padding"> 
+      {% include "template/header.html" %}
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li class="active">Уведомления</li>
+      </ol>
+      
+      <div class="cab-page w clearfix pb50">
+        
+        <div class="mail-div">
+          <a href="" class="mail-p m-new">
+            <time>пн 12/11/20015  10:15</time>
+            <b>
+              Статус заявки #234325 изменен с <span class="otg label label-default">отгружено</span> на <span class="label label-success">доставлено</span>
+            </b>
+            <i class="fa fa-check"></i>
+          </a>
+          {% for i in 1..10 %}
+            <a href="" class="mail-p">
+              <time>пн 12/11/20015  10:15</time>
+              <b>
+                Статус заявки #234325 изменен с <span class="otg label label-default">отгружено</span> на <span class="label label-success">доставлено</span>
+              </b>
+              <i class="fa fa-check"></i>
+            </a>
+          {% endfor %}
+          <div class="well text-center">
+            <h3><i class="fa fa-bell"></i> Уведомлений нет</h3>
+          </div>
+        </div>
+        
+        {% include "template/pager.html" %} 
+      </div>
+    </div>
+  </div>
+
+  {% include "template/footer.html" %} 
+
+{% include "template/modal.html" %}
+{% include "template/scripts.html" %}
+
+</body>
+</html>

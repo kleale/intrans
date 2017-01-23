@@ -1,0 +1,61 @@
+<!-- Site Sripts -->
+<script src="../inc/bootstrap.min.js"></script>
+<script src="../inc/main.js"></script>
+
+
+<!--PAGES select only dev-->
+<style>
+  body{}
+  .project-menu{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    right: 0px;
+    left:0;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 5px 0px 0px 0px;
+  }
+  .project-menu a{
+    font-size: 10px;
+  }
+</style>
+<div class="project-menu">
+  <div class="btn-group" role="group" id="hpages">
+    <a href="/index.html" class="m1 btn btn-sm btn-success">Кабинет</a>
+    <a href="/options.html" class="m1 btn btn-sm btn-success">Опции</a>
+    <a href="/help.html" class="m1 btn btn-sm btn-success">Помощь</a>
+    <a href="/mail.html" class="m1 btn btn-sm btn-success">Уведомления</a>
+    <a href="/za_list.html" class="m1 btn btn-sm btn-success">Завяки</a>
+    <a href="/za_list2.html" class="m1 btn btn-sm btn-success">Завяки JS таблица</a>
+    <a href="/za_add.html" class="m1 btn btn-sm btn-success">Завяки: добавить</a>
+    <a href="/za_add2.html" class="m1 btn btn-sm btn-success">Запрос с сайта</a>
+  </div>
+</div>
+
+<!--PAGES js navi only dev-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+(function ($) {
+  'use strict';
+  $(document).ready(function () {
+    $(function () {
+        setNavigation();
+    });
+    function setNavigation() {
+        var path = window.location.pathname;
+        path = path.replace(/\/$/, "");
+        path = decodeURIComponent(path);
+        $("#hpages a").each(function () {
+            var href = $(this).attr('href');
+            if (path.substring(0, href.length) === href) {
+                $(this).addClass('active');
+            }
+        });
+    }
+  }); //end ready
+}(jQuery));
+</script>
+<!--.STYLE CHANGE dev-->
+<!--.PAGES navi dev-->

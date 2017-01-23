@@ -1,0 +1,243 @@
+{% set title = "Кабинет: Заявки" %}
+
+<!DOCTYPE html>
+<html>
+{% include "template/head.html" %}
+
+
+<body class="cab html front not-logged-in no-sidebars page-node page-node- page-node-385 node-type-page i18n-ru">
+  <div class="root" data-lang="ru">
+    <div class="w root_padding"> 
+      {% include "template/header.html" %}
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li class="active">Уведомления</li>
+      </ol>
+      
+      <div class="cab-page w clearfix pb50">
+        
+        <div class="za-div" if="form0">
+          <form>
+            <div class="rowbs">
+              <div class="col-md-4">
+                <h2>Заявка</h2>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    ID
+                  </label>
+                  #}
+                  <input type="text" class="form-control" placeholder="ID">
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Ваше имя
+                  </label>#}
+                  <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Ваша компания
+                  </label>#}
+                  <input type="text" class="form-control" placeholder="Ваша компания">
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Дата
+                  </label>#}
+                  <input type="text" class="form-control date"  id="datetimepicker1" placeholder="Дата">
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Код ТНВЭД 
+                  </label>#}
+                  <div >
+                    <input type="text" class="form-control" placeholder="Код ТНВЭД">
+                  </div>
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Контакты
+                  </label>#}
+                  <div >
+                    <textarea name="" id="" class="form-control" rows="2">Контактная информация</textarea>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <h2>Место</h2>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Место погрузки
+                  </label>#}
+                  
+                    <input type="text" class="form-control" placeholder="Место погрузки">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Место доставки
+                  </label>#}
+                  
+                    <input type="text" class="form-control" placeholder="Место доставки">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Место таможенного оформления
+                  </label>#}
+                 
+                    <input type="text" class="form-control" placeholder="Место таможенного оформления">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Условия поставки (инкотермс)
+                  </label>#}
+                  <select  class="form-control">
+                    <option value="">EXW</option>
+                    <optgroup label="Первый перевозчик">
+                      <option value="">FCA</option>
+                      <option value="">CPT</option>
+                      <option value="">CIP</option>
+                    </optgroup>
+                    <optgroup label="Группа?">
+                      <option value="">DDU</option>
+                      <option value="">DDP</option>
+                      <option value="">FAS</option>
+                      <option value="">DAF</option>
+                      <option value="">DEQ</option>
+                      <option value="">FOB</option>
+                      <option value="">CFR</option>
+                      <option value="">CIF</option>
+                      <option value="">DES</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <h2>Груз</h2>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Название груза
+                  </label>#}
+                  
+                    <input type="text" class="form-control" placeholder="Название груза">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Вес груза
+                  </label>#}
+                  
+                    <input type="text" class="form-control" placeholder="Вес груза">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Габариты груза (ДхШхВ)
+                  </label>#}
+                  
+                    <input type="text" class="form-control" placeholder="Габариты груза (ДхШхВ)">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    штабелируемый груз
+                  </label>#}
+                  
+                    <select  class="form-control">
+                      <option value="">Штабелируемый груз</option>
+                      <option value="">Не штабелируемый груз</option>
+                    </select>
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Стоимость груза
+                  </label>#}
+                 
+                    <input type="text" class="form-control" placeholder="Стоимость груза">
+                  
+                </div>
+                <div class="form-group">
+                  {#<label class="control-label">
+                    Ссылка на товар
+                  </label>#}
+               
+                    <input type="text" class="form-control" placeholder="Ссылка на товар">
+                  
+                </div>
+              </div>
+              
+            </div>
+            <hr>
+            <h2>Транспорт</h2>
+            <div class="rowbs clearfix">
+              <div class="col-md-5">
+                <div class="form-group">
+                  {#<label class="col-sm-2 control-label">
+                    Вид транспортных средств
+                  </label>#}
+                  <div >
+                    <input type="text" class="form-control" placeholder="Вид транспортных средств">
+                  </div>
+                </div>
+                <div class="form-group">
+                  {#<label class="col-sm-2 control-label">
+                    Количество транспортных средств
+                  </label>#}
+                  <div >
+                    <input type="text" class="form-control" placeholder="Количество транспортных средств">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <textarea class="form-control" rows="6">Комментарий</textarea>
+              </div>
+            </div>
+            <br><br>
+            <hr>
+          </form>
+        </div>
+        <br><br>
+        <hr>
+        <!-- DOCS -->
+        <div class="docs-upload" id="uploader">
+          <form action="">
+            <h2 >Документы <i class="fa fa-question-circle tip" title="подсказка"></i></h2>
+            <div class="form-group">
+              
+                <div class="robs clearfix">
+                  <div class="doc">
+                    <div id="dZUpload" class="dropzone">
+                        <div class="dz-default dz-message">Перенесите сюда файл </div>
+                    </div>
+                    <br>
+                    <b>ИЛИ</b><br><br>
+                    <input name="file" type="file" id="file1" multiple />
+                  </div>
+                  
+               </div>
+            </div>
+          </form>
+        </div>
+        <hr>
+        <center>
+          <a href="" class="btn btn-primary btn-lg">Отправить заявку</a>
+        </center>
+        
+      </div>
+    </div>
+  </div>
+
+  {% include "template/footer.html" %} 
+
+{% include "template/modal.html" %}
+{% include "template/scripts.html" %}
+
+</body>
+</html>

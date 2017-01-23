@@ -1,0 +1,16 @@
+/*
+* Base css 
+*/
+@import "bootstrap.css";
+@import "part/base.css";
+@import "part/theme.css";
+@import "part/modal.css";
+@import "font-awesome.min.css";
+@import "../assets/css/bootstrap-datetimepicker.min.css";
+@import "../assets/css/dropzone.css";
+
+/*
+* Pages
+*/
+@import "part/page-cab.css";
+

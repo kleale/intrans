@@ -1,0 +1,66 @@
+{% set title = "Кабинет: Настройки" %}
+
+<!DOCTYPE html>
+<html>
+{% include "template/head.html" %}
+
+
+<body class="cab html front not-logged-in no-sidebars page-node page-node- page-node-385 node-type-page i18n-ru">
+  <div class="root" data-lang="ru">
+    <div class="w root_padding"> 
+      {% include "template/header.html" %}
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li class="active">Настройки</li>
+      </ol>
+      
+      <div class="cab-page w clearfix pb50">
+        <h4>ID 42564</h4>
+        <hr>
+        <form>
+          <div class="form-group">
+            <label for="e1">Фамилия</label>
+            <input type="text" class="form-control" id="e1" placeholder="Фамилия">
+          </div>
+          <div class="form-group">
+            <label for="e2">Имя</label>
+            <input type="text" class="form-control" id="e2" placeholder="Имя">
+          </div>
+          <div class="form-group">
+            <label for="e3">Отчество</label>
+            <input type="text" class="form-control" id="e3" placeholder="Отчество">
+          </div>
+          <div class="form-group">
+            <label for="e4">Email</label>
+            <input type="email" class="form-control" id="e4" placeholder="Email">
+          </div>
+          <div class="well">
+            <div class="form-group">
+              <label for="e5">Новый пароль</label>
+              <input type="password" class="form-control" id="e5" placeholder="Новый пароль">
+            </div>
+            <div class="form-group">
+              <label for="e6">Повотрить новый пароль</label>
+              <input type="password" id="e6" class="form-control" placeholder="Повотрить новый пароль">
+              <p class="help-block">Точно запомнили?</p>
+            </div>
+            <div class="form-group">
+              <label for="e6">Старый пароль</label>
+              <input type="password" id="e6" class="form-control" placeholder="Старый пароль для проверки">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% include "template/footer.html" %} 
+
+{% include "template/modal.html" %}
+{% include "template/scripts.html" %}
+
+</body>
+</html>

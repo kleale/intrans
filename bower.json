@@ -1,0 +1,28 @@
+{
+  "name": "intrans",
+  "version": "0.0.0",
+  "description": "newdesign",
+  "main": "index.html",
+  "authors": [
+    "Kleale <kleale@kleale.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "k",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "3.*",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.45"
+  },
+  "keywords": [
+    "az"
+  ],
+  "private": true
+}
